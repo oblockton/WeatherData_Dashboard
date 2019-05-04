@@ -1,0 +1,83 @@
+.navbar li {
+	display:inline-block;
+	float:right;
+}
+
+@media(min-width: 480px) {
+.siderbar {
+	float:right;
+}
+
+.main {
+	float:left;
+}
+
+.canvas {
+	background-color: lavender;
+}
+
+.white-backg {
+	background-color: white;
+}
+
+#content-row {
+	justify-content: space-around;
+}
+
+#content-container {
+	padding-left: 8.33%;
+	padding-top: 5%;
+}
+
+.navbar-nav {
+	/* flex-direction: row-reverse; */
+}
+
+#brand-label {
+	background-color: #2DD7F2;
+	justify-content: center;
+	height: 60px;
+	max-width: none;
+}
+
+.nav-li-pad {
+padding-left: 5%;
+}
+
+#nav-list {
+	/* flex-wrap: nowrap; */
+	flex-direction: row;
+}
+.nav-link {
+	padding: 0px;
+}
+#brand-link {
+	color:white;
+	font-weight:bold;
+	font-family: "Roboto", sans-serif;
+	text-align: center;
+	height: 100%;
+	width: 100%;
+	margin-right: 0px;
+	font-size: 50px;
+	display: contents;
+}
+
+#plot-nav-drop {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+}
+
+#navbar-nav {
+	padding: 0px
+}
+
+.navbar-brand {
+	margin-right: 0px;
+}
+
+#brand-container {
+	flex-wrap: nowrap;
+	flex-direction: row;
+}

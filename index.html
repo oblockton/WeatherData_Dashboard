@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1, shrink-to-fit=no">
+    <title>Home: Weather Dashboard</title>
+
+        <!-- Load the page styles.-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="style1.css" rel="stylesheet">
+    <!-- Load scripts for jQuery and bootstrap's js  -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+  </head>
+  <body>
+
+    <div id="main" class="">
+      <div id="header" class="container-fluid">
+        <nav id="navbar-nav"class="navbar navbar-default">
+          <div id="brand-container" class="navbar-nav">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div id="brand-label" class="navbar-header col-md-2 ">
+            <!-- Collect the nav links, forms, and other content for toggling -->
+              <a id="brand-link" class="navbar-brand" href="index.html">Latitude</a>
+            </div>
+            <ul id="nav-list" class="navbar-nav navbar-right">
+              <li class="nav-li-pad nav-item"><a href="data.html">Data</a></li>
+              <li class="nav-li-pad nav-item"><a href="comparisons.html">Comparison</a></li>
+              <li class=" nav-item nav-li-pad dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+                <ul id="plot-nav-drop" class="dropdown-menu">
+                  <li class="dropdown-item"><a href="max_temperature.html">Max Temperature</a></li>
+                  <li class="dropdown-item"><a href="humidity.html">Humidity</a></li>
+                  <li class="dropdown-item"><a href="cloudiness.html">Cloudiness</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li class="dropdown-item"><a href="wind_speed.html">Wind Speed</a></li>
+                </ul>
+              </li>
+            </ul>
+            </div><!-- /.navbar-collapse -->
+
+        </nav>
+      </div><!-- /.container-fluid -->
+      <div id="content-canvas" class="container-fluid canvas">
+        <div id="content-container" class="container-fluid">
+          <div id="content-row" class="row">
+            <div class="col-md-6 white-backg">
+     	      <h1>Summary:Latitude vs. X</h1>
+     		    <img src="Images/Temperature.png">
+     		    <p>The purpose of this project is to analysis how the weather changes as one travels closer to the equator. To accomplish our analysis, we used the Open Weather API and the CitiPy Python Library to randomly pull 500 cities from around the world to create our dataset. </p>
+     		    <p>After we assembled our data, we used the Pandas and Matplotlib Python libraries to analyze our data set. Our four dependent variables were: max temperature, humidity, cloudiness, and wind speed. This dashboard shows the source data and the visualizations based on our four dependent variables. We also explain the trends that is shown in our visualizations</p>
+     	     </div>
+     		   <div class="col-md-4 sidebar white-backg">
+     	        <div class="row">
+     	          <div class="col-md-12">
+     	            <h1>Visualizations</h1>
+     	          </div>
+     	        </div>
+     	       <div class="row">
+     	          <div class="col-md-6">
+     		           <a href="max_temperature.html">Max Temperature<img src="Images/Temperature.png" width="200px" height="150px"></a>
+     	          </div>
+     	          <div class="col-md-6">
+     		           <a href="humidity.html">Humidity<img src="Images/Humidity.png" width="200px" height="150px"></a>
+     	          </div>
+     	       </div>
+     	       <div class="row">
+     	          <div class="col-md-6">
+     	            <a href="cloudiness.html">Cloudiness<img src="Images/Cloudiness.png" width="200px" height="150px"></a>
+     	          </div>
+     	          <div class="col-md-6">
+     	            <a href="wind_speed.html">Wind Speed<img src="Images/Wind_Speed.png" width="200px" height="150px"></a>
+     	          </div>
+     	        </div>
+     	     </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer" class="">
+
+      </div>
+    </div>
+  </body>
+</html>
