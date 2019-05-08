@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1, shrink-to-fit=no">
-    <title>Home: Weather Dashboard</title>
+    <title>Plot Cloudiness: Weather Dashboard</title>
 
         <!-- Load the page styles.-->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -22,15 +22,14 @@
       <div id="content-canvas" class="container-fluid canvas">
         <div id="content-container" class="container-fluid">
           <div class="col-md-6 max-width-del white-backg">
-   	      <h1>Latitude vs. X</h1>
-   		    <img src="images/Lat_V_Temp.png" style="width: 100%;">
-   		    <p>The purpose of this project is to analyze how the weather changes as one travels closer to the equator. To accomplish our analysis, we used the Open Weather API and the CitiPy Python Library to randomly pull 500 cities from around the world to create our dataset. </p>
-   		    <p>After we assembled our data, we used the Pandas and Matplotlib Python libraries to analyze our data set. Our four dependent variables were: max temperature, humidity, cloudiness, and wind speed. This dashboard shows the source data,visualizations, and summaries based of four dependent variables.</p>
+   	      <h1>Latitude v. Cloudiness</h1>
+   		    <img src="images/Lat_V_Cloudiness.png" style="width: 100%;"><br>
+   		    <p>There is no clear relationship between latitude and cloudiness. We do observe bands of cities located in areas with a specific level of cloudiness. One band exists at 0. It is unclear if these zero values are true measures.  These bands may indicate a human preference for settling areas with specific geographical and/or weather characteristics: such as coastlines, valleys, and river basins.</p>
    	     </div>
    		   <div id="visualizations" class="col-md-4 sidebar-mod sidebar white-backg">
    	        <div class="row">
    	          <div class="col-md-12">
-   	            <h1>Visualizations</h1>
+   	            <h1>Plots</h1>
    	          </div>
    	        </div>
             <div class="row center-viz">

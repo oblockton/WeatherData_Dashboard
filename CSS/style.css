@@ -217,3 +217,9 @@ body {
 .force-scroll-x {
 	overflow: auto;
 }
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Pplot Page Styling<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+
+#descript img {
+	width: 100%;
+}
