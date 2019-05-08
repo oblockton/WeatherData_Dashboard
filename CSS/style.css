@@ -1,56 +1,63 @@
-.navbar li {
-	display:inline-block;
-	float:right;
+#footer-hr {
+	margin: 0;
+	background-color: #2DD7F2;
+	height: 5px;
+	width: 100%;
 }
 
-@media(min-width: 480px) {
-.siderbar {
-	float:right;
+html,
+body {
+	height: 100%
 }
 
+
+#main {
+	padding: 0;
+}
+
+
+/* >>>>>>>>delete this<<<< */
 .main {
 	float:left;
 }
 
 .canvas {
 	background-color: lavender;
+	height: 100%
 }
 
 .white-backg {
 	background-color: white;
 }
 
-#content-row {
-	justify-content: space-around;
+/* .navbar li {
+	display:inline-block;
+	float:right;
+} */
+
+.nav-li-pad {
+	margin:5%;
 }
 
-#content-container {
-	padding-left: 8.33%;
-	padding-top: 5%;
+#nav-list {
+	flex-direction: row;
+	justify-content: space-between;
 }
 
-.navbar-nav {
-	/* flex-direction: row-reverse; */
+.nav-link {
+	padding: 0px;
+}
+
+.navbar-brand {
+	margin-right: 0px;
 }
 
 #brand-label {
 	background-color: #2DD7F2;
 	justify-content: center;
-	height: 60px;
 	max-width: none;
 }
 
-.nav-li-pad {
-padding-left: 5%;
-}
-
-#nav-list {
-	/* flex-wrap: nowrap; */
-	flex-direction: row;
-}
-.nav-link {
-	padding: 0px;
-}
 #brand-link {
 	color:white;
 	font-weight:bold;
@@ -63,21 +70,128 @@ padding-left: 5%;
 	display: contents;
 }
 
+
+
+/* @media screen and (min-width: 441px) {
+  #plot-nav-drop {
+		position: absolute;
+		right: 0;
+		left: auto;
+		text-align: right;
+  }
+} */
 #plot-nav-drop {
 	position: absolute;
-	display: flex;
-	flex-direction: column;
+	right: auto;
+	left: 0;
+	text-align: left;
+}
+
+@media screen and (min-width: 500px) {
+  #plot-nav-drop {
+		position: absolute;
+		right: 0;
+		left: auto;
+		text-align: right;
+  }
 }
 
 #navbar-nav {
-	padding: 0px
-}
-
-.navbar-brand {
-	margin-right: 0px;
+	padding-right:6%;
+	padding-left: 4%;
+	padding-top: 0;
+	padding-bottom: 0;
 }
 
 #brand-container {
 	flex-wrap: nowrap;
 	flex-direction: row;
+}
+
+#content-canvas {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+#content-row {
+	justify-content: space-around;
+
+}
+
+#content-container {
+	/* padding-left: 8.33%; */
+	padding-top: 5%;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.sidebar-mod {
+	height: 100%;
+	max-width: none;
+}
+
+.max-width-del {
+	max-width: none;
+}
+
+.max-width-add {
+	max-width: 50%
+}
+
+.center-viz {
+	text-align: center;
+}
+
+.compare-link img {
+	width: 100%;
+}
+
+#footer-loc {
+	margin-top: 11%;
+}
+
+#footer {
+	height:80px;
+	background-color: gray;
+	bottom: 0;
+	position: relative;
+}
+
+@media(min-width: 480px) {
+.siderbar {
+	float:right;
+}
+
+/*  >>>>>>>>>>>>>>>>>>>>>>>>>>>Styling for comparison page<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+
+#compare-container {
+	padding-top: 5%;
+	padding-bottom: 3%;
+	padding-left: 5%;
+	padding-right: 5%;
+	display: inline-table;
+}
+
+#compare-content {
+	height: 100%;
+}
+
+#compare-header {
+	color: #2DD7F2;
+}
+
+#compare-hr {
+	color: lavender;
+	width: 100%;
+}
+
+.compare-link {
+	display: flex;
+	flex-direction: column;
+}
+
+.multi-plot {
+	max-width: none;
 }

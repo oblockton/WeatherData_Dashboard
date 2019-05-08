@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1, shrink-to-fit=no">
+    <title>Comparisons: Weather Dashboard</title>
+
+        <!-- Load the page styles.-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="style1.css" rel="stylesheet">
+    <!-- Load scripts for jQuery and bootstrap's js  -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+  </head>
+  <body>
+    <div id="header" class="container-fluid">
+    </div>
+    <div id="compare-container" class="container-fluid canvas">
+      <div id="compare-content" class="col-md-12 white-backg">
+         <div class="row">
+           <div id="compare-header" class="col-md-12">
+             <h1>Comparisons: Latitude vs X(zibit)</h1>
+             <h3>Yo Dog! We gon pimp yo weather data!</h3>
+           </div>
+           <h6 id="click-prompt" class="col-md-12">Click any plot to put a fish tank your Jupyter Notebook</h6>
+         </div>
+         <hr id="compare-hr">
+        <div class="row">
+           <div class="col-md-6 multi-plot">
+              <a class="compare-link" href="max_temperature.html">vs. Max Temperature<img src="images/Lat_V_Temp.png" width="432px" height="288px"></a>
+           </div>
+           <div class="col-md-6 multi-plot">
+              <a class="compare-link" href="humidity.html">vs. Humidity<img src="images/Lat_V_Humidity.png" width="432px" height="288px"></a>
+           </div>
+        </div>
+        <div class="row">
+           <div class="col-md-6 multi-plot">
+             <a class="compare-link" href="cloudiness.html">vs. Cloudiness<img src="images/Lat_V_Cloudiness.png" width="432px" height="288px"></a>
+           </div>
+           <div class="col-md-6 multi-plot">
+             <a class="compare-links" href="wind_speed.html">vs. Wind Speed<img src="images/Lat_V_Windspeed.png" width="432px" height="288px"></a>
+           </div>
+       </div>
+      </div>
+    </div>
+    <div id="footer-loc" class="">
+      <!-- <hr id="footer-hr">
+      <div id="footer" class="">
+      </div> -->
+    </div>
+
+  <script src="js/builder.js"></script>
+  </body>
+</html>
