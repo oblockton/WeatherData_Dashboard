@@ -16,11 +16,6 @@ body {
 }
 
 
-/* >>>>>>>>delete this<<<< */
-.main {
-	float:left;
-}
-
 .canvas {
 	background-color: lavender;
 	height: 100%
@@ -141,14 +136,18 @@ body {
 }
 
 .center-viz {
-	text-align: center;
+	text-align: -webkit-center;
 }
 
-.compare-link img {
+.viz-link {
+	display: flex;
+	flex-direction: column;
+}
+.viz-link img {
 	width: 100%;
 }
 
-#footer-loc {
+.footer-marg {
 	margin-top: 11%;
 }
 
@@ -171,16 +170,17 @@ body {
 	padding-bottom: 3%;
 	padding-left: 5%;
 	padding-right: 5%;
-	display: inline-table;
+	display: table;
+	background-color: lavender;
 }
 
 #compare-content {
 	height: 100%;
 }
 
-#compare-header {
+/* #compare-header {
 	color: #2DD7F2;
-}
+} */
 
 #compare-hr {
 	color: lavender;
@@ -194,4 +194,26 @@ body {
 
 .multi-plot {
 	max-width: none;
+}
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data page styling <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+
+.lavender {
+	background-color: lavender;
+}
+
+
+#data-canvas {
+	padding: 5%;
+}
+
+.force-scroll {
+	height: 82.8%;
+	overflow: auto;
+	display: block;
+}
+
+.force-scroll-x {
+	overflow: auto;
 }
