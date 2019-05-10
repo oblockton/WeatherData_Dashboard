@@ -7,29 +7,27 @@
     <title>Plot Humidity: Weather Dashboard</title>
 
         <!-- Load the page styles.-->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="CSS/bootstrap.min.css" rel="stylesheet">
+    <link href="CSS/style.css" rel="stylesheet">
     <!-- Load scripts for jQuery and bootstrap's js  -->
-    <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="JS/jquery-3.4.1.min.js"></script>
+    <script src="JS/bootstrap.min.js"></script>
 
   </head>
   <body>
-
-    <div id="main" class="">
-      <div id="header" class="container-fluid">
-      </div><!-- /.container-fluid -->
-      <div id="content-canvas" class="container-fluid canvas">
-        <div id="content-container" class="container-fluid">
-          <div class="col-md-6 max-width-del white-backg">
-   	      <h1>Latitude v. Humidity</h1>
-   		    <img src="images/Lat_V_Humidity.png" style="width: 100%;"><br>
-   		    <p>Most cities at the time of data collection had a recorded humidity above 60%. There is not a definitive increase in humidity as we approach the equator. Though within our dataset we can observe that those cities on or in immediate proximity to the equator had a minimum humidity of ~50%. As we approach the poles, we see instances of lower humidity. Additionally, there exist a drop-in humidity existing in a band between lat-40 &-20. This is mirrored in the latitude bands of the opposing hemisphere.</p>
-   	     </div>
-   		   <div id="visualizations" class="col-md-4 sidebar-mod sidebar white-backg">
+    <div id="header" class="container-fluid">
+    </div><!-- /.container-fluid -->
+    <div id="content-container" class="container-fluid canvas">
+      <div id="content-row" class="row">
+        <div class="col-md-6 max-width-del white-backg">
+     	      <h1>Latitude v. Humidity</h1>
+     		    <img src="images/Lat_V_Humidity.png" style="width: 100%;">
+            <p>Most cities at the time of data collection had a recorded humidity above 60%. There is not a definitive increase in humidity as we approach the equator. Though within our dataset we can observe that those cities on or in immediate proximity to the equator had a minimum humidity of ~50%. As we approach the poles, we see instances of lower humidity. Additionally, there exist a drop-in humidity existing in a band between lat-40 &-20. This is mirrored in the latitude bands of the opposing hemisphere.</p>
+   	    </div>
+   		  <div id="visualizations" class="col-md-4 sidebar-mod sidebar white-backg">
    	        <div class="row">
    	          <div class="col-md-12">
-   	            <h1>Plots</h1>
+   	            <h1>Visualizations</h1>
    	          </div>
    	        </div>
             <div class="row center-viz">
@@ -49,15 +47,11 @@
                </div>
             </div>
    	     </div>
-        </div>
-        <div id="footer-loc" class="footer-marg">
-          <!-- <hr id="footer-hr">
-          <div id="footer" class="">
-          </div> -->
-        </div>
       </div>
-
     </div>
-    <script src="js/builder.js"></script>
+    <div id="footer-loc" class="">
+      <!-- JS appends footer here on each page with <div id="footer-loc"></div> --------->
+    </div>
+    <script src="JS/builder.js"></script>
   </body>
 </html>

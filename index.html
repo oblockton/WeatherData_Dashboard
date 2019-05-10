@@ -15,19 +15,17 @@
 
   </head>
   <body>
-
-    <div id="main" class="">
-      <div id="header" class="container-fluid">
-      </div><!-- /.container-fluid -->
-      <div id="content-canvas" class="container-fluid canvas">
-        <div id="content-container" class="container-fluid">
-          <div class="col-md-6 max-width-del white-backg">
-   	      <h1>Latitude vs. X</h1>
-   		    <img src="images/Lat_V_Temp.png" style="width: 100%;">
-   		    <p>The purpose of this project is to analyze how the weather changes as one travels closer to the equator. To accomplish our analysis, we used the Open Weather API and the CitiPy Python Library to randomly pull 500 cities from around the world to create our dataset. </p>
-   		    <p>After we assembled our data, we used the Pandas and Matplotlib Python libraries to analyze our data set. Our four dependent variables were: max temperature, humidity, cloudiness, and wind speed. This dashboard shows the source data,visualizations, and summaries based of four dependent variables.</p>
-   	     </div>
-   		   <div id="visualizations" class="col-md-4 sidebar-mod sidebar white-backg">
+    <div id="header" class="container-fluid">
+    </div><!-- /.container-fluid -->
+    <div id="content-container" class="container-fluid canvas">
+      <div id="content-row" class="row">
+        <div class="col-md-6 max-width-del white-backg">
+     	      <h1>Latitude vs. X</h1>
+     		    <img src="images/Lat_V_Temp.png" style="width: 100%;">
+     		    <p>The purpose of this project is to analyze how the weather changes as one travels closer to the equator. To accomplish our analysis, we used the Open Weather API and the CitiPy Python Library to randomly pull 500 cities from around the world to create our dataset. </p>
+     		    <p>After we assembled our data, we used the Pandas and Matplotlib Python libraries to analyze our data set. Our four dependent variables were: max temperature, humidity, cloudiness, and wind speed. This dashboard shows the source data,visualizations, and summaries based of four dependent variables.</p>
+   	    </div>
+   		  <div id="visualizations" class="col-md-4 sidebar-mod sidebar white-backg">
    	        <div class="row">
    	          <div class="col-md-12">
    	            <h1>Visualizations</h1>
@@ -50,15 +48,11 @@
                </div>
             </div>
    	     </div>
-        </div>
-        <div id="footer-loc" class="footer-marg">
-          <!-- <hr id="footer-hr">
-          <div id="footer" class="">
-          </div> -->
-        </div>
       </div>
-
     </div>
+    <div id="footer-loc" class="">
+      <!-- JS appends footer here on each page with <div id="footer-loc"></div> --------->
+    </div>    
     <script src="JS/builder.js"></script>
   </body>
 </html>
