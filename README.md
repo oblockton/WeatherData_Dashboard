@@ -1,110 +1,57 @@
-# Unit 12 | Assignment - Web Visualization Dashboard (Latitude)
+# Unit 6 | Assignment - What's the Weather Like?
 
 ## Background
 
-Data is more powerful when we share it with others! Let's take what we've learned about HTML and CSS to create a dashboard showing off the analysis we've done.
+Whether financial, political, or social -- data's true power lies in its ability to answer questions definitively. So let's take what you've learned about Python requests, APIs, and JSON traversals to answer a fundamental question: "What's the weather like as we approach the equator?"
 
-![Images/landingResize.png](Images/landingResize.png)
+Now, we know what you may be thinking: _"Duh. It gets hotter..."_
 
-## Latitude - Latitude Analysis Dashboard with Attitude
+But, if pressed, how would you **prove** it?
 
-For this homework we'll be creating a visualization dashboard website using visualizations we've created in a past assignment. Specifically, we'll be plotting [weather data](Resources/cities.csv).
+![Equator](Images/equatorsign.png)
 
-In building this dashboard, we'll create individual pages for each plot and a means by which we can navigate between them. These pages will contain the visualizations and their corresponding explanations. We'll also have a landing page, a page where we can see a comparison of all of the plots, and another page where we can view the data used to build them.
+## WeatherPy
 
-### Website Requirements
+In this example, you'll be creating a Python script to visualize the weather of 500+ cities across the world of varying distance from the equator. To accomplish this, you'll be utilizing a [simple Python library](https://pypi.python.org/pypi/citipy), the [OpenWeatherMap API](https://openweathermap.org/api), and a little common sense to create a representative model of weather across world cities.
 
-For reference, see the ["Screenshots" section](#screenshots) below.
+Your objective is to build a series of scatter plots to showcase the following relationships:
 
-The website must consist of 7 pages total, including:
+* Temperature (F) vs. Latitude
+* Humidity (%) vs. Latitude
+* Cloudiness (%) vs. Latitude
+* Wind Speed (mph) vs. Latitude
 
-* A [landing page](#landing-page) containing:
-  * An explanation of the project.
-  * Links to each visualizations page.
-* Four [visualization pages](#visualization-pages), each with:
-  * A descriptive title and heading tag.
-  * The plot/visualization itself for the selected comparison.
-  * A paragraph describing the plot and its significance.
-* A ["Comparisons" page](#comparisons-page) that:
-  * Contains all of the visualizations on the same page so we can easily visually compare them.
-  * Uses a bootstrap grid for the visualizations.
-    * The grid must be two visualizations across on screens medium and larger, and 1 across on extra-small and small screens.
-* A ["Data" page](#data-page) that:
-  * Displays a responsive table containing the data used in the visualizations.
-    * The table must be a bootstrap table component.
-    * The data must come from exporting the `.csv` file as HTML, or converting it to HTML. You may use a csv-to-html table conversion tool, e.g. [ConvertCSV](http://www.convertcsv.com/csv-to-html.htm).
+Your final notebook must:
 
-The website must, at the top of every page, have a navigation menu that:
+* Randomly select **at least** 500 unique (non-repeat) cities based on latitude and longitude.
+* Perform a weather check on each of the cities using a series of successive API calls.
+* Include a print log of each city as it's being processed with the city number and city name.
+* Save both a CSV of all data retrieved and png images for each scatter plot.
 
-* Has the name of the site on the left of the nav which allows users to return to the landing page from any page.
-* Contains a dropdown on the right of the navbar named "Plots" which provides links to each individual visualization page.
-* Provides two more links on the right: "Comparisons" which links to the comparisons page, and "Data" which links to the data page.
-* Is responsive (using media queries). The nav must have similar behavior as the screenshots ["Navigation Menu" section](#navigation-menu) (notice the background color change).
+As final considerations:
 
-Finally, the website must be deployed to GitHub pages.
+* You must complete your analysis using a Jupyter notebook.
+* You must use the Matplotlib or Pandas plotting libraries.
+* You must include a written description of three observable trends based on the data.
+* You must use proper labeling of your plots, including aspects like: Plot Titles (with date of analysis) and Axes Labels.
+* See [Example Solution](WeatherPy_Example.pdf) for a reference on expected format.
 
-When finished, submit to BootcampSpot the links to 1) the deployed app and 2) the GitHub repository.
+## Hints and Considerations
 
-### Considerations
+* The city data is generated based on random coordinates; as such, your outputs will not be an exact match to the provided starter notebook.
 
-* You may use the [weather data](Resources/cities.csv) or choose another dataset. Alternatively, you may use the included [cities dataset](Resources/cities.csv) and pull the images from the [assets folder](Resources/assets).
-* You must use bootstrap. This includes using the bootstrap `navbar` component for the header on every page, the bootstrap table component for the data page, and the bootstrap grid for responsiveness on the comparison page.
-* You must deploy your website to GitHub pages, with the website working on a live, publicly accessible URL as a result.
-* Be sure to use a CSS media query for the navigation menu.
-* Be sure your website works at all window widths/sizes.
-* Feel free to take some liberty in the visual aspects, but keep the core functionality the same.
+* You may want to start this assignment by refreshing yourself on the [geographic coordinate system](http://desktop.arcgis.com/en/arcmap/10.3/guide-books/map-projections/about-geographic-coordinate-systems.htm).
 
-### Bonuses
+* Next, spend the requisite time necessary to study the OpenWeatherMap API. Based on your initial study, you should be able to answer  basic questions about the API: Where do you request the API key? Which Weather API in particular will you need? What URL endpoints does it expect? What JSON structure does it respond with? Before you write a line of code, you should be aiming to have a crystal clear understanding of your intended outcome.
 
-* Use a different dataset! The requirements above still hold, but make it your own.
-* Use a bootstrap theme to customize your website. You may use a tool like [Bootswatch](https://bootswatch.com/). Make it look snazzy, give it some attitude. If using this, be sure you also meet all of the requirements listed above.
-* Add extra visualizations! The more comparisons the better, right?
-* Use meaningful glyphicons next to links in the header.
-* Have visualization navigation on every visualizations page with an active state. See the screenshots below.
+* A starter code for Citipy has been provided. However, if you're craving an extra challenge, push yourself to learn how it works: [citipy Python library](https://pypi.python.org/pypi/citipy). Before you try to incorporate the library into your analysis, start by creating simple test cases outside your main script to confirm that you are using it correctly. Too often, when introduced to a new library, students get bogged down by the most minor of errors -- spending hours investigating their entire code -- when, in fact, a simple and focused test would have shown their basic utilization of the library was wrong from the start. Don't let this be you!
 
-### Screenshots
+* Part of our expectation in this challenge is that you will use critical thinking skills to understand how and why we're recommending the tools we are. What is Citipy for? Why would you use it in conjunction with the OpenWeatherMap API? How would you do so?
 
-This section contains screenshots of each page that must be built, at varying screen widths. These are a guide; you can meet the requirements without having the pages look exactly like the below images.
+* In building your script, pay attention to the cities you are using in your query pool. Are you getting coverage of the full gamut of latitudes and longitudes? Or are you simply choosing 500 cities concentrated in one region of the world? Even if you were a geographic genius, simply rattling 500 cities based on your human selection would create a biased dataset. Be thinking of how you should counter this. (Hint: Consider the full range of latitudes).
 
-#### Landing page
+* Lastly, remember -- this is a challenging activity. Push yourself! If you complete this task, then you can safely say that you've gained a strong mastery of the core foundations of data analytics and it will only go better from here. Good luck!
 
-Large screen:
-![Landing page large screen](Images/landing-lg.png)
+## Copyright
 
-Small screen:
-![Landing page small screen](Images/landing-sm.png)
-￼
-
-#### Comparisons page
-
-Large screen:
-![comparison page large screen](Images/comparison-lg.png)
-
-Small screen:
-![comparison page small screen](Images/comparison-sm.png)
-
-#### Data page
-
-Large screen:
-![data page large screen](Images/data-lg.png)
-
-Small screen:
-![data page small screen](Images/data-sm.png)
-
-#### Visualization pages
-
-You'll build four of these, one for each visualization. Here's an example of one:
-
-Large screen:
-![visualize page large screen](Images/visualize-lg.png)
-
-Small screen:
-![visualize page small screen](Images/visualize-sm.png)
-
-#### Navigation menu
-
-Large screen:
-![nav menu large screen](Images/nav-lg.png)
-
-Small screen:
-![nav menu small screen](Images/nav-sm.png)
+Data Boot Camp © 2018. All Rights Reserved.
