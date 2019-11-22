@@ -1,16 +1,16 @@
 
 
-Whether financial, political, or social -- data's true power lies in its ability to answer questions definitively. So let's take what you've learned about Python requests, APIs, and JSON traversals to answer a fundamental question: "What's the weather like as we approach the equator?"
+Whether financial, political, or social -- data's true power lies in its ability to answer questions definitively. So let's answer a fundamental question: "What's the weather like as we approach the equator?"
 
-Now, we know what you may be thinking: _"Duh. It gets hotter..."_
+But, of course: _"Duh. It gets hotter..."_
 
-But, if pressed, how would you **prove** it?
+But, if pressed, how can I **prove** it?
 
-![Equator](Images/equatorsign.png)
+![Equator](images/Lat_V_Temp.png)
 
 ## WeatherPy
 
-In this example, I'll be creating a Python script to visualize the weather of 500+ cities across the world of varying distance from the equator. To accomplish this, I'll be utilizing a [simple Python library](https://pypi.python.org/pypi/citipy), the [OpenWeatherMap API](https://openweathermap.org/api), and a little common sense to create a representative model of weather across world cities.
+I'll be creating a Python script to visualize the weather of 500+ cities across the world of varying distance from the equator. To accomplish this, I'll be utilizing a [simple Python library](https://pypi.python.org/pypi/citipy), the [OpenWeatherMap API](https://openweathermap.org/api), and a little common sense to create a representative model of weather across world cities.
 
 My objective is to build a series of scatter plots to showcase the following relationships:
 
@@ -25,6 +25,8 @@ My final notebook will:
 * Perform a weather check on each of the cities using a series of successive API calls.
 * Include a print log of each city as it's being processed with the city number and city name.
 * Save both a CSV of all data retrieved and png images for each scatter plot.
+
+
 
 ---
 Omari B 2019
