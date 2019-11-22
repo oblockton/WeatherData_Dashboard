@@ -1,4 +1,5 @@
 
+# Visualizing Weather Data with Python
 
 Whether financial, political, or social -- data's true power lies in its ability to answer questions definitively. So let's answer a fundamental question: "What's the weather like as we approach the equator?"
 
@@ -6,7 +7,6 @@ But, of course: _"Duh. It gets hotter..."_
 
 But, if pressed, how can I **prove** it?
 
-![Equator](images/Lat_V_Temp.png)
 
 ## WeatherPy
 
@@ -26,7 +26,7 @@ My final notebook will:
 * Include a print log of each city as it's being processed with the city number and city name.
 * Save both a CSV of all data retrieved and png images for each scatter plot.
 
-
+![Latitude vs. Temperature](images/Lat_V_Temp.png)
 
 ---
 Omari B 2019
